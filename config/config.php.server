@@ -1,0 +1,18 @@
+<?php
+ 
+  define('URL', 'http://victormireles.com/'); //cambiar por el dominio
+  define('URLCORS', 'http://victormireles.com/'); //cambiar por el dominio
+  define('HOST', 'database');
+  define('PORT', '3306');
+  define('DB', 'generatorcv');
+  define('USER', 'root');
+  define('PASSWORD', 'tiger');
+  define('CHARSET', 'utf8mb4');
+  define('VERSION', '1.0');
+
+  //Constantes para la encriptacion, no mover 
+  define('METHOD','AES-256-CBC');
+  define('SECRET_KEY','docemasuno');
+  define('SECRET_IV','101712');
+
+?>

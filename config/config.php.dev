@@ -1,0 +1,17 @@
+<?php
+ 
+  define('URL', 'http://localhost/generatorCV/'); //cambiar por el dominio
+  define('URLCORS', 'http://localhost/generatorCV/'); //cambiar por el dominio
+  define('HOST', 'localhost');
+  define('DB', 'generadorcv');
+  define('USER', 'root');
+  define('PASSWORD', '');
+  define('CHARSET', 'utf8mb4');
+  define('VERSION', '1.0');
+
+  //Constantes para la encriptacion, no mover 
+  define('METHOD','AES-256-CBC');
+  define('SECRET_KEY','docemasuno');
+  define('SECRET_IV','101712');
+
+?>

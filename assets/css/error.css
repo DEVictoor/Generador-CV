@@ -1,0 +1,25 @@
+.error
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+
+    .error__text
+    {
+        font-family: inherit;
+        font-size: 1.2em;
+        color: rgba(0, 0, 0, .5);
+    }
+
+    .error__big
+    {
+        font-family: inherit;
+        font-size: inherit;
+        font-size: 25em;
+        color: #323d69;
+    }

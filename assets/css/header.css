@@ -1,0 +1,96 @@
+.header
+{
+    display: flex;
+    font-family: inherit;
+    font-size: inherit;
+    width: 100vw;
+    height: var(--header-height);
+    background-color: var(--color-background);
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: solid 1px rgba(0, 0, 0, .1);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+    .header__name
+    {
+        display: flex;
+        align-items: center;
+        font-family: inherit;
+        font-size: 1em;
+        font-weight: 600;
+        margin-left: 1em;
+        color: var(--color-basic-4);
+    }
+
+    .header__menu
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__icon
+    {
+        width: calc(var(--header-height) - 2em);
+        height: calc(var(--header-height) - 2em);
+        color: black;
+        margin-right: .5em;
+        position: relative;
+    }
+
+        .header__icon:hover
+        {
+            background-color: var(--color-secondary-2);
+            border-radius: var(--border-radius);
+        }
+
+        .header__icon i
+        {
+            color: var(--color-basic-3);
+            font-size: 1.5em;
+        }
+
+        .header__icon:hover i
+        {
+            color: var(--color-primary);
+        }
+
+        .header__icon a
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header__icon--alert::after
+        {
+            position: absolute;
+            content: '';
+            top: .75em;
+            right: .75em;
+            width: .4em;
+            height: .4em;
+            background-color: var(--color-alert-red);
+            border-radius: 50%;
+        }
+
+    .header__user
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2em;
+        border-left: solid 1px rgba(0, 0, 0, .1);
+        height: var(--header-height);
+        box-sizing: border-box;
+    }
+
+        .header__user img
+        {
+            width: 2em;
+            border-radius: 50%;
+        }

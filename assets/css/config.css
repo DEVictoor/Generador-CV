@@ -1,0 +1,36 @@
+/* *
+
+    @param local "../../../assets/V1/css/"
+    @param server "http://innovamoscontigo.com/assets/V1/css/"
+
+* */
+
+/* == reset == */
+@import url("./reset.css");
+
+/* == ionicons == */
+@import url("./ionicons.min.css");
+
+/* == style == */
+@import url("./style.css");
+
+/* == header == */
+@import url("./header.css");
+
+/* == nav == */
+@import url("./nav.css");
+
+/* == form == */
+@import url("./form.css");
+
+/* == table == */
+@import url("./table.css");
+
+/* == filter == */
+@import url("./filter.css");
+
+/* == login == */
+@import url("./login.css");
+
+/* == error == */
+@import url("./error.css");

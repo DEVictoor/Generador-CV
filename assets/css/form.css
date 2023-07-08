@@ -1,0 +1,849 @@
+/* ------------------------ input text ------------------------ */
+
+.inputText
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+    .inputText__label
+    {
+        display: block;
+        font-family: inherit;
+        font-size: .9em;
+        margin-bottom: 1em;
+        font-weight: 600;
+        color: var(--color-basic-4);
+    }
+
+    .inputText__input
+    {
+        display: block;
+        margin: 0;
+        padding: .675em .8em .775em .8em;
+        width: 100%;
+        font-family: inherit;
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--color-basic-4);
+        background-color: transparent;
+        background-clip: padding-box;
+        border: 1px solid var(--color-basic-2);
+        border-radius: var(--border-radius);
+        appearance: none;
+    }
+
+        .inputText__input::placeholder
+        {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        .inputText__input:hover
+        {
+            border-color: var(--color-basic-3);
+        }
+
+        .inputText__input:focus
+        {
+            outline: none;
+            border-color: var(--color-basic-3);
+        }
+
+        .inputText__input:disabled
+        {
+            background-color: rgba(0, 0, 0, .02);
+            color: rgba(0, 0, 0, .3);
+            user-select: none;
+        }
+
+        .inputText__input:disabled:hover
+        {
+            border-color: var(--color-basic-2);
+        }
+
+        .inputText__input:disabled::placeholder
+        {
+            color: rgba(0, 0, 0, .2);
+        }
+
+    .inputText__msg
+    {
+        margin-top: .2em;
+        width: 100%;
+        height: 1em;
+        font-family: inherit;
+        font-size: .8em;
+        display: block;
+        text-align: right;
+        font-weight: 400;
+        color: var(--color-basic-4);
+    }
+
+        .inputText--error .inputText__input
+        {
+            border-color: var(--color-alert-red);
+        }
+
+        .inputText--error .inputText__msg
+        {
+            color: var(--color-alert-red);
+        }
+/* ------------------------ input text addon ------------------------ */
+
+.inputTextAddon
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+    .inputTextAddon__label
+    {
+        display: block;
+        font-family: inherit;
+        font-size: .9em;
+        margin-bottom: 1em;
+        font-weight: 600;
+        color: var(--color-basic-4);
+    }
+
+    .inputTextAddon__box
+    {
+        display: flex;
+    }
+
+        .inputTextAddon__box .inputTextAddon__addon:first-child
+        {
+            border-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .inputTextAddon__box .inputTextAddon__addon:not(:first-child)
+        {
+            border-left: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .inputTextAddon__box .inputTextAddon__input:first-child
+        {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .inputTextAddon__box .inputTextAddon__input:not(:first-child)
+        {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+    .inputTextAddon__addon
+    {
+        display: flex;
+        width: min-content;
+        padding: .675em .8em .775em .8em;
+        color: var(--color-basic-4);
+        white-space: nowrap;
+        background-color: var(--color-secondary-2);
+        border: 1px solid var(--color-basic-2);
+        border-radius: var(--border-radius);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inputTextAddon__input
+    {
+        display: block;
+        margin: 0;
+        padding: .675em .8em .775em .8em;
+        width: 100%;
+        font-family: inherit;
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--color-basic-4);
+        background-color: transparent;
+        background-clip: padding-box;
+        border: 1px solid var(--color-basic-2);
+        border-radius: var(--border-radius);
+        appearance: none;
+    }
+
+        .inputTextAddon__input::placeholder
+        {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        .inputTextAddon__input:hover
+        {
+            border-color: var(--color-basic-3);
+        }
+
+        .inputTextAddon__input:focus
+        {
+            outline: none;
+            border-color: var(--color-basic-3);
+        }
+
+        .inputTextAddon__input:disabled
+        {
+            background-color: rgba(0, 0, 0, .02);
+            color: rgba(0, 0, 0, .3);
+            user-select: none;
+        }
+
+        .inputTextAddon__input:disabled:hover
+        {
+            border-color: var(--color-basic-2);
+        }
+
+        .inputTextAddon__input:disabled::placeholder
+        {
+            color: rgba(0, 0, 0, .2);
+        }
+
+    .inputTextAddon__msg
+    {
+        margin-top: .2em;
+        width: 100%;
+        height: 1em;
+        font-family: inherit;
+        font-size: .8em;
+        display: block;
+        text-align: right;
+        font-weight: 400;
+        color: var(--color-basic-4);
+    }
+
+        .inputTextAddon--error .inputTextAddon__input
+        {
+            border-color: var(--color-alert-red);
+        }
+
+        .inputTextAddon--error .inputTextAddon__msg
+        {
+            color: var(--color-alert-red);
+        }
+
+/* ------------------------ input date ------------------------ */
+
+.inputDate
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+    .inputDate__label
+    {
+        display: block;
+        font-family: inherit;
+        font-size: .9em;
+        margin-bottom: 1em;
+        font-weight: 600;
+        color: var(--color-basic-4);
+    }
+
+    .inputDate__input
+    {
+        display: block;
+        margin: 0;
+        padding: .638em .8em .675em .8em;
+        width: 100%;
+        font-family: inherit;
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--color-basic-4);
+        background-color: transparent;
+        background-clip: padding-box;
+        border: 1px solid var(--color-basic-2);
+        border-radius: var(--border-radius);
+        appearance: none;
+    }
+
+        .inputDate__input:hover
+        {
+            border-color: var(--color-basic-3);
+        }
+
+        .inputDate__input:focus
+        {
+            outline: none;
+            border-color: var(--color-basic-3);
+        }
+
+        .inputDate__input:disabled
+        {
+            background-color: rgba(0, 0, 0, .02);
+            color: rgba(0, 0, 0, .3);
+            user-select: none;
+        }
+
+        .inputDate__input:disabled:hover
+        {
+            border-color: var(--color-basic-2);
+        }
+    
+    .inputDate__msg
+    {
+        margin-top: .2em;
+        width: 100%;
+        height: 1em;
+        font-family: inherit;
+        font-size: .8em;
+        display: block;
+        text-align: right;
+        font-weight: 400;
+        color: var(--color-basic-4);
+    }
+
+        .inputDate--error .inputDate__input
+        {
+            border-color: var(--color-alert-red);
+        }
+
+        .inputDate--error .inputDate__msg
+        {
+            color: var(--color-alert-red);
+        }
+
+/* ------------------------ input multi text ------------------------ */
+
+.inputMultiText
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+    .inputMultiText__label
+    {
+        display: block;
+        font-family: inherit;
+        font-size: .9em;
+        margin-bottom: 1em;
+        font-weight: 600;
+        color: var(--color-basic-4);
+    }
+
+    .inputMultiText__list
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0 .8em 0 .8em;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: 400;
+        color: var(--color-basic-4);
+        background-color: transparent;
+        border: 1px solid var(--color-basic-2);
+        border-radius: var(--border-radius);
+        gap: .5em;
+        cursor: text;
+    }
+    
+        .inputMultiText__list:hover
+        {
+            border-color: var(--color-basic-3);
+        }
+
+        .inputMultiText__list:focus
+        {
+            border-color: var(--color-basic-3);
+        }
+
+        .inputMultiText--border .inputMultiText__list
+        {
+            border-color: var(--color-basic-3);
+        }
+
+        .inputMultiText--disabled .inputMultiText__list
+        {
+            background-color: rgba(0, 0, 0, .02);
+            user-select: none;
+            cursor: default;
+        }
+
+        .inputMultiText--disabled:hover .inputMultiText__list
+        {
+            border-color: var(--color-basic-2);
+        }
+
+    .inputMultiText__item
+    {
+        font-family: inherit;
+        font-size: inherit;
+        display: flex;
+        padding: .4em .5em .45em .5em;
+        background-color: var(--color-secondary-2);
+        border-radius: var(--border-radius);
+        margin: .45em 0 .5em 0;
+        overflow-wrap: break-word;
+    }
+
+    .inputMultiText__close
+    {
+        display: inline-block;
+        margin-left: .5em;
+        width: 1.2em;
+        height: 1.2em;
+        background-color: rgba(0, 0, 0, .08);
+        position: relative;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-bottom: -.2em;
+    }
+
+        .inputMultiText__close::after,
+        .inputMultiText__close::before
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            content:'';
+            display: block;
+            width: .8em;
+            height: .05em;
+            background-color: rgba(0, 0, 0, .3);
+            
+        }
+
+        .inputMultiText__close::after
+        {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .inputMultiText__close::before
+        {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    
+        .inputMultiText--disabled .inputMultiText__item
+        {
+            color: rgba(0, 0, 0, .2);
+        }
+
+        .inputMultiText--disabled .inputMultiText__close
+        {
+            display: none;
+        }
+
+    .inputMultiText__input
+    {
+        display: block;
+        font-family: inherit;
+        font-size: inherit;
+        width: 10px;
+        max-width: 100%;
+        margin: .45em 0;
+        padding: .375em .5em .375em 0;
+        border: none;
+        outline: none;
+        white-space: pre;
+        background-color: inherit;
+        color: inherit;
+    }
+
+        .inputMultiText__input::placeholder
+        {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        .inputMultiText--disabled .inputMultiText__input
+        {
+            display: none;
+        }
+    
+    .inputMultiText__msg
+    {
+        margin-top: .2em;
+        width: 100%;
+        height: 1em;
+        font-family: inherit;
+        font-size: .8em;
+        display: block;
+        text-align: right;
+        font-weight: 400;
+        color: var(--color-basic-4);
+    }
+
+        .inputMultiText--error .inputMultiText__list
+        {
+            border-color: var(--color-alert-red);
+        }
+
+        .inputMultiText--error .inputMultiText__msg
+        {
+            color: var(--color-alert-red);
+        }
+
+/* ------------------------ input select ------------------------ */
+
+.inputSelect
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+    .inputSelect__label
+    {
+        display: block;
+        font-family: inherit;
+        font-size: .9em;
+        margin-bottom: 1em;
+        font-weight: 600;
+        color: var(--color-basic-4);
+    }
+
+    .inputSelect__input
+    {
+        display: block;
+        margin: 0;
+        padding: .675em 2.25em .775em .8em;
+        width: 100%;
+        font-family: inherit;
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--color-basic-4);
+        background-color: transparent;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right .75rem center;
+        background-size: .9em;
+        background-clip: padding-box;
+        border: 1px solid var(--color-basic-2);
+        border-radius: var(--border-radius);
+        appearance: none;
+    }
+
+        .inputSelect__input:hover
+        {
+            border-color: var(--color-basic-3);
+        }
+
+        .inputSelect__input:focus
+        {
+            outline: none;
+            border-color: var(--color-basic-3);
+        }
+
+        .inputSelect__input:disabled
+        {
+            background-color: rgba(0, 0, 0, .02);
+            color: rgba(0, 0, 0, .3);
+            user-select: none;
+        }
+
+        .inputSelect__input:disabled:hover
+        {
+            border-color: var(--color-basic-2);
+        }
+
+    .inputSelect__msg
+    {
+        margin-top: .2em;
+        width: 100%;
+        height: 1em;
+        font-family: inherit;
+        font-size: .8em;
+        display: block;
+        text-align: right;
+        font-weight: 400;
+        color: var(--color-basic-4);
+    }
+
+        .inputSelect--error .inputSelect__input
+        {
+            border-color: var(--color-alert-red);
+        }
+
+        .inputSelect--error .inputSelect__msg
+        {
+            color: var(--color-alert-red);
+        }
+
+/* ------------------------ input textarea ------------------------ */
+
+.inputTextarea
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+    .inputTextarea__label
+    {
+        display: block;
+        font-family: inherit;
+        font-size: .9em;
+        margin-bottom: 1em;
+        font-weight: 600;
+        color: var(--color-basic-4);
+    }
+
+    .inputTextarea__input
+    {
+        display: block;
+        margin: 0;
+        padding: .675em .8em .775em .8em;
+        width: 100%;
+        font-family: inherit;
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--color-basic-4);
+        background-color: transparent;
+        background-clip: padding-box;
+        border: 1px solid var(--color-basic-2);
+        border-radius: var(--border-radius);
+        appearance: none;
+        resize: none;
+    }
+
+        .inputTextarea__input::-webkit-scrollbar
+        {
+            width: 0px;
+        }
+    
+        .inputTextarea__input::placeholder
+        {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        .inputTextarea__input:hover
+        {
+            border-color: var(--color-basic-3);
+        }
+
+        .inputTextarea__input:focus
+        {
+            outline: none;
+            border-color: var(--color-basic-3);
+        }
+
+        .inputTextarea__input:disabled
+        {
+            background-color: rgba(0, 0, 0, .02);
+            color: rgba(0, 0, 0, .3);
+            user-select: none;
+        }
+
+        .inputTextarea__input:disabled:hover
+        {
+            border-color: var(--color-basic-2);
+        }
+
+    .inputTextarea__msg
+    {
+        margin-top: .2em;
+        width: 100%;
+        height: 1em;
+        font-family: inherit;
+        font-size: .8em;
+        display: block;
+        text-align: right;
+        font-weight: 400;
+        color: var(--color-basic-4);
+    }
+
+        .inputTextarea--error .inputTextarea__input
+        {
+            border-color: var(--color-alert-red);
+        }
+
+        .inputTextarea--error .inputTextarea__msg
+        {
+            color: var(--color-alert-red);
+        }
+
+/* ------------------------ input search ------------------------ */
+
+.inputSearch
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+}
+
+    .inputSearch__label
+    {
+        display: block;
+        font-family: inherit;
+        font-size: .9em;
+        margin-bottom: 1em;
+        font-weight: 600;
+        color: var(--color-basic-4);
+    }
+
+    .inputSearch__input
+    {
+        display: block;
+        margin: 0;
+        padding: .675em .8em .775em .8em;
+        width: 100%;
+        font-family: inherit;
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--color-basic-4);
+        background-color: transparent;
+        background-clip: padding-box;
+        border: 1px solid var(--color-basic-2);
+        border-radius: var(--border-radius);
+        appearance: none;
+    }
+
+        .inputSearch__input::placeholder
+        {
+            color: rgba(0, 0, 0, .3);
+        }
+
+        .inputSearch__input:hover
+        {
+            border-color: var(--color-basic-3);
+        }
+
+        .inputSearch__input:focus
+        {
+            outline: none;
+            border-color: var(--color-basic-3);
+        }
+
+        .inputSearch__input:disabled
+        {
+            background-color: rgba(0, 0, 0, .02);
+            color: rgba(0, 0, 0, .3);
+            user-select: none;
+        }
+
+        .inputSearch__input:disabled:hover
+        {
+            border-color: var(--color-basic-2);
+        }
+
+        .inputSearch__input:disabled::placeholder
+        {
+            color: rgba(0, 0, 0, .2);
+        }
+
+    .inputSearch__box
+    {
+        position: absolute;
+        display: none;
+        margin-top: .25em;
+        height: 50vh;
+        max-height: 300px;
+        font-family: inherit;
+        font-size: inherit;
+        width: 100%;
+        background-color: var(--color-basic-1);
+        border-radius: var(--border-radius);
+        overflow-x: hidden;
+        overflow-y: auto;
+        border: 1px solid var(--color-basic-3);
+        box-shadow: 0px 0px 1em 0px rgba(0, 0, 0, .1);
+        z-index: 1;
+    }
+
+        .inputSearch--active .inputSearch__box
+        {
+            display: block;
+        }
+
+    .inputSearch__item
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: inherit;
+        font-size: inherit;
+        padding: .6em 1em;
+        cursor: pointer;
+    }
+
+        .inputSearch__item:hover
+        {
+            background-color: var(--color-secondary-2);
+        }
+
+    .inputSearch__title
+    {
+        display: block;
+        font-family: inherit;
+        font-size: inherit;
+        color: var(--color-basic-4);
+    }
+
+    .inputSearch__details
+    {
+        font-family: inherit;
+        font-size: .8em;
+        color: rgba(0, 0, 0, .5);
+    }
+
+    .inputSearch__list
+    {
+        display: flex;
+        font-family: inherit;
+        font-size: inherit;
+        gap: .5em;
+    }
+
+    .inputSearch__tag
+    {
+        font-family: inherit;
+        font-size: .75em;
+        padding: .5em;color: #fff;
+        background-color: var(--color-primary);
+        border-radius: var(--border-radius);
+    }
+
+    .inputSearch__msg
+    {
+        margin-top: .2em;
+        width: 100%;
+        height: 1em;
+        font-family: inherit;
+        font-size: .8em;
+        display: block;
+        text-align: right;
+        font-weight: 400;
+        color: var(--color-basic-4);
+    }
+
+        .inputSearch--error .inputSearch__input
+        {
+            border-color: var(--color-alert-red);
+        }
+
+        .inputSearch--error .inputSearch__msg
+        {
+            color: var(--color-alert-red);
+        }
